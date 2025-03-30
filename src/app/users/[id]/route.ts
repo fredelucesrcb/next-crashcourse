@@ -1,4 +1,4 @@
-import { users } from "../route";
+import { users } from "../users";
 
 export async function GET(request: Request, { params }: { params: Promise<{id:string}> }) {
     const { id } = await params;

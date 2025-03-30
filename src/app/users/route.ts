@@ -1,7 +1,4 @@
-export const users = [
-    { id: 1, name: "John Doe"},
-    { id: 2, name: "Jane Doe"}
-]
+import { users } from "./users";
 
 export async function GET() {
     return Response.json(users);
