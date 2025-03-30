@@ -10,7 +10,7 @@ import React from 'react'
 
 const page = async () => {
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    const res = await fetch("https://jsonplaceholder.typicode.com/userss");
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
     const users = await res.json();
 
     return (
