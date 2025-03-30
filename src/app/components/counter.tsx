@@ -1,13 +1,13 @@
 'use client'
 
 import React, { useState } from 'react';
-import { useAuth, useUser } from '@clerk/nextjs';
+import { useUser } from '@clerk/nextjs';
 
 const Counter = () => {
 
     // const { isLoaded, userId, sessionId, getToken } = useAuth();
 
-    const { isLoaded, isSignedIn, user } = useUser();
+    const { isLoaded, user } = useUser();
     console.log("counter COmponent");
 
     const [count, setCount] = useState(0);
